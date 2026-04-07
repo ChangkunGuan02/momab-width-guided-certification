@@ -1,0 +1,38 @@
+{
+  "config": {
+    "T": 10000,
+    "n_runs": 10,
+    "trajectory_runs": 20,
+    "seed": 7
+  },
+  "settings": [
+    {
+      "index": 0,
+      "label": "(0.12, 1)",
+      "description": "$(\\delta,m)=(0.12,1)$",
+      "family": "delta_variation",
+      "delta": 0.12,
+      "crowd_size": 1,
+      "g_dagger": 0.55,
+      "delta_min_p": 0.12,
+      "c_pucb_exact": 21.305976988870892,
+      "width_certified_runs": 20,
+      "width_certified_round_mean_observed": 2145.9,
+      "width_certified_round_median_observed": 2102.5
+    },
+    {
+      "index": 1,
+      "label": "(0.02, 8)",
+      "description": "$(\\delta,m)=(0.02,8)$",
+      "family": "crowd_variation",
+      "delta": 0.02,
+      "crowd_size": 8,
+      "g_dagger": 0.55,
+      "delta_min_p": 0.020000000000000018,
+      "c_pucb_exact": 102.72524619634171,
+      "width_certified_runs": 20,
+      "width_certified_round_mean_observed": 2846.4,
+      "width_certified_round_median_observed": 2879.5
+    }
+  ]
+}
