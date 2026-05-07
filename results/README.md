@@ -1,6 +1,6 @@
 # Published Result Outputs
 
-This folder contains the fixed-resource rerun outputs used for the manuscript
+This folder contains the fixed-resource rerun outputs used for the reported
 computational study.
 
 ## Fixed Resource Profile

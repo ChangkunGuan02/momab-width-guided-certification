@@ -1,8 +1,8 @@
 # MOMAB Computational Study Artifact
 
 This directory contains the supplementary computational artifact for the study.
-The bundled outputs reproduce the manuscript tables and figures from the
-prepared benchmark instances included under `data/`.
+The bundled outputs reproduce the reported tables and figures from the prepared
+benchmark instances included under `data/`.
 
 ## Environment
 
@@ -35,11 +35,11 @@ trusted inputs.
 - `src/synthetic_report.py`: synthetic table and figure generator.
 - `src/prepare_spotify_instance.py`: raw Spotify-to-instance preparation script.
 - `src/prepare_kuairec_cohort_instance.py`: raw KuaiRec-to-instance preparation script.
-- `data/`: prepared benchmark instances used by the manuscript experiments.
+- `data/`: prepared benchmark instances used for the reported experiments.
 - `data/prepared_instances_manifest.json`: checksums and array schemas for the prepared instances.
 - `data/LICENSES.md`: attribution and license notes for the prepared data files.
-- `frozen_subsets/`: held-out subset definitions used for the manuscript rows.
-- `results/`: bundled final outputs used in the manuscript.
+- `frozen_subsets/`: held-out subset definitions used for the reported rows.
+- `results/`: bundled final outputs used for the reported results.
 - `scripts/`: Slurm run and aggregation helpers.
 - `slurm/`: Slurm array task entry points.
 - `LICENSE`: code license and third-party data notice.
@@ -47,13 +47,13 @@ trusted inputs.
 
 ## Inspect Bundled Outputs
 
-The main bundled real-data outputs are:
+Bundled real-data output tables include:
 
 - `results/real/spotify_main/tables/table_6_1_main.tex`
 - `results/real/spotify_easy/tables/table_6_1_main.tex`
 - `results/real/kuairec/tables/table_6_1_main.tex`
 
-The main bundled synthetic outputs are:
+Bundled synthetic output files include:
 
 - `results/synthetic/main/results_table.tex`
 - `results/synthetic/main/summary.json`
