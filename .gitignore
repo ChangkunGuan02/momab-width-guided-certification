@@ -25,6 +25,7 @@ slurm-*.out
 
 # Generated result caches that are too large for normal Git history
 results/**/trajectory_cache.npz
+results/*_reference.pdf
 
 # OS/editor clutter
 .DS_Store
