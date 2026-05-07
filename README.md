@@ -40,7 +40,7 @@ trusted inputs.
 - `data/LICENSES.md`: attribution and license notes for the prepared data files.
 - `frozen_subsets/`: held-out subset definitions used for the manuscript rows.
 - `results/`: bundled final outputs used in the manuscript.
-- `scripts/`: Slurm run, aggregation, and zip-building helpers.
+- `scripts/`: Slurm run and aggregation helpers.
 - `slurm/`: Slurm array task entry points.
 - `LICENSE`: code license and third-party data notice.
 - `CITATION.cff`: citation metadata.
@@ -62,8 +62,8 @@ The main bundled synthetic outputs are:
 
 The final synthetic PDFs and per-job trajectory outputs are included. The large
 aggregated trajectory cache (`results/synthetic/main/trajectory_cache.npz`) is
-omitted from GitHub; it can be included in the supplementary zip when present
-locally or regenerated from the bundled job outputs.
+not versioned in this repository and can be regenerated from the bundled job
+outputs if needed.
 
 ## Local Smoke Test
 
@@ -135,16 +135,3 @@ bash scripts/aggregate_all.sh
 The account, partition, and QoS can be set through `ACCOUNT`, `PARTITION`, and
 `QOS`. Without `FORCE_CLEAN=1`, the planner stops if generated outputs already
 exist.
-
-## Build Supplementary Zip
-
-To create the supplementary zip from this directory:
-
-```bash
-bash scripts/make_supplement_zip.sh
-```
-
-If the output zip already exists, use `FORCE=1 bash scripts/make_supplement_zip.sh`
-to replace it. The zip helper excludes scheduler logs, Python bytecode,
-Matplotlib caches, and local runtime caches that should not be uploaded. It
-keeps the scientific result caches needed to regenerate the manuscript figures.
