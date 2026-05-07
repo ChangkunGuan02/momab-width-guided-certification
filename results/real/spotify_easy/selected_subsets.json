@@ -1,0 +1,287 @@
+[
+  {
+    "subset_id": 0,
+    "subset_type": "easy_separated",
+    "subset_type_label": "Easy separated",
+    "k": 10,
+    "indices": [
+      8,
+      13,
+      31,
+      32,
+      46,
+      81,
+      83,
+      97,
+      99,
+      101
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 6,
+      "pareto_indices": [
+        0,
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "g_dagger": 0.25754418718307914,
+      "objective_winner_gaps": [
+        0.057265285285288736,
+        0.03492983852902154,
+        0.05874319737158196,
+        0.001051029719727814,
+        0.25754418718307914,
+        0.13174632729709224
+      ],
+      "delta_min_p": 0.02043976856028229,
+      "delta_median_positive_p": 0.024654031488653055,
+      "sum_inv_delta_p": 164.05983953701164,
+      "positive_gap_arms": 4,
+      "zero_gap_arms": 6,
+      "near_positive_gap_arms": 0,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 4,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 35.99405699652937,
+      "search_seed": 20260805
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 6000.0,
+      "easy_score": 4020.6481106462934,
+      "random_score": 0.039611210751815173
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "singer-songwriter",
+        "rock",
+        "british",
+        "acoustic",
+        "indian",
+        "forro",
+        "detroit-techno",
+        "club",
+        "new-age",
+        "latino"
+      ],
+      "arm_names": [
+        "singer-songwriter",
+        "rock",
+        "british",
+        "acoustic",
+        "indian",
+        "forro",
+        "detroit-techno",
+        "club",
+        "new-age",
+        "latino"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    },
+    "original_screen_subset_id": 16
+  },
+  {
+    "subset_id": 1,
+    "subset_type": "easy_separated",
+    "subset_type_label": "Easy separated",
+    "k": 10,
+    "indices": [
+      13,
+      30,
+      31,
+      35,
+      46,
+      52,
+      81,
+      104,
+      105,
+      107
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 6,
+      "pareto_indices": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "g_dagger": 0.3109743508927686,
+      "objective_winner_gaps": [
+        0.057265285285288736,
+        0.05721956599292666,
+        0.05588538438237889,
+        0.0024954471569419434,
+        0.3109743508927686,
+        0.07902028678952266
+      ],
+      "delta_min_p": 0.02360121531531517,
+      "delta_median_positive_p": 0.029847525681676645,
+      "sum_inv_delta_p": 138.4743483590065,
+      "positive_gap_arms": 4,
+      "zero_gap_arms": 6,
+      "near_positive_gap_arms": 0,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 4,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 36.68349156122285,
+      "search_seed": 20260803
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 6000.0,
+      "easy_score": 4026.159554387655,
+      "random_score": 0.9545324151974214
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "rock",
+        "country",
+        "british",
+        "trance",
+        "indian",
+        "goth",
+        "forro",
+        "opera",
+        "kids",
+        "latin"
+      ],
+      "arm_names": [
+        "rock",
+        "country",
+        "british",
+        "trance",
+        "indian",
+        "goth",
+        "forro",
+        "opera",
+        "kids",
+        "latin"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    },
+    "original_screen_subset_id": 9
+  },
+  {
+    "subset_id": 2,
+    "subset_type": "easy_separated",
+    "subset_type_label": "Easy separated",
+    "k": 10,
+    "indices": [
+      4,
+      13,
+      16,
+      26,
+      30,
+      48,
+      76,
+      81,
+      88,
+      96
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 6,
+      "pareto_indices": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "g_dagger": 0.3287857620031233,
+      "objective_winner_gaps": [
+        0.03909663326653079,
+        0.02823710621242448,
+        0.03182297527988864,
+        0.010403072812290248,
+        0.3287857620031233,
+        0.12733549879759654
+      ],
+      "delta_min_p": 0.02274206432865611,
+      "delta_median_positive_p": 0.026253489005544417,
+      "sum_inv_delta_p": 147.9663097217313,
+      "positive_gap_arms": 4,
+      "zero_gap_arms": 6,
+      "near_positive_gap_arms": 0,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 4,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 41.44313592592293,
+      "search_seed": 20260802
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 6000.0,
+      "easy_score": 4027.8748560291833,
+      "random_score": 0.06464673129370568
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "spanish",
+        "rock",
+        "r-n-b",
+        "funk",
+        "country",
+        "hardcore",
+        "heavy-metal",
+        "forro",
+        "blues",
+        "comedy"
+      ],
+      "arm_names": [
+        "spanish",
+        "rock",
+        "r-n-b",
+        "funk",
+        "country",
+        "hardcore",
+        "heavy-metal",
+        "forro",
+        "blues",
+        "comedy"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    },
+    "original_screen_subset_id": 6
+  }
+]

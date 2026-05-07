@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Front-identification and coverage diagnostics on the same held-out subsets. These metrics evaluate full-front learning rather than Pareto-regret certification.}
+\label{tab:real-front-coverage}
+\scriptsize
+\begin{tabular}{llccc}
+\toprule
+Subset type & Method & Front precision $\uparrow$ & Front recall $\uparrow$ & Coverage entropy $\uparrow$ \\
+\midrule
+Misleading near-front & Width-guided & 0.416 $\pm$ 0.185 & 0.993 $\pm$ 0.036 & 0.001 $\pm$ 0.001 \\
+Misleading near-front & Pareto UCB1 & 1.000 $\pm$ 0.000 & 0.990 $\pm$ 0.044 & 0.667 $\pm$ 0.475 \\
+Misleading near-front & Annealing-Pareto & 0.925 $\pm$ 0.129 & 0.940 $\pm$ 0.092 & 0.620 $\pm$ 0.448 \\
+Misleading near-front & Scalarized UCB & 1.000 $\pm$ 0.000 & 0.987 $\pm$ 0.050 & 0.447 $\pm$ 0.327 \\
+\midrule
+Friendly near-front & Width-guided & 0.815 $\pm$ 0.050 & 0.950 $\pm$ 0.087 & 0.003 $\pm$ 0.002 \\
+Friendly near-front & Pareto UCB1 & 0.963 $\pm$ 0.053 & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 \\
+Friendly near-front & Annealing-Pareto & 0.910 $\pm$ 0.078 & 0.912 $\pm$ 0.111 & 0.934 $\pm$ 0.081 \\
+Friendly near-front & Scalarized UCB & 0.961 $\pm$ 0.056 & 1.000 $\pm$ 0.000 & 0.737 $\pm$ 0.113 \\
+\midrule
+Easy separated & Width-guided & 0.502 $\pm$ 0.287 & 1.000 $\pm$ 0.000 & 0.000 $\pm$ 0.000 \\
+Easy separated & Pareto UCB1 & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 0.000 $\pm$ 0.000 \\
+Easy separated & Annealing-Pareto & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 0.000 $\pm$ 0.000 \\
+Easy separated & Scalarized UCB & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 0.000 $\pm$ 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

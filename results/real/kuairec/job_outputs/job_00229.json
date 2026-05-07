@@ -1,0 +1,37 @@
+{
+  "job_index": 229,
+  "dataset_name": "kuairec_d26",
+  "instance": "data/kuairec_cohort_instance_d26.npz",
+  "T": 1000000,
+  "subset_id": 2,
+  "subset_type": "misleading_near_front",
+  "subset_type_label": "Misleading near-front",
+  "k": 10,
+  "indices": [
+    18,
+    33,
+    80,
+    101,
+    144,
+    155,
+    197,
+    213,
+    244,
+    246
+  ],
+  "run_idx": 17,
+  "policy": "pareto_ucb1",
+  "reward_seed": 22260721,
+  "policy_seed": 40430705,
+  "gap_tol": 1e-12,
+  "metrics": {
+    "final_regret": 4907.885906786506,
+    "terminal_zero_regret": 1.0,
+    "terminal_pareto_optimal": 1.0,
+    "fairness_regret": 59541.3718637369,
+    "front_precision": 1.0,
+    "front_recall": 1.0,
+    "front_coverage_entropy": 0.9999998132338895
+  },
+  "terminal_recommendation_arm": 0
+}

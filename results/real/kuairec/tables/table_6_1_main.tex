@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\caption{Real-data benchmark on held-out subsets. Subsets are grouped by empirical mean geometry before policy simulation. The main target is Pareto regret and detection of at least one Pareto-optimal arm; fairness is reported as a distinct objective.}
+\label{tab:real-main}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccc}
+\toprule
+Subset type & Method & Pareto regret $\downarrow$ & $\Pr(\widehat a_T\in A^\star)\uparrow$ & Fairness regret $\downarrow$ \\
+\midrule
+Misleading near-front & Width-guided & 8.00 $\pm$ 4.41 & 1.000 & 28490.50 $\pm$ 37556.69 \\
+Misleading near-front & Pareto UCB1 & 4772.64 $\pm$ 1766.07 & 1.000 & 50304.98 $\pm$ 6821.95 \\
+Misleading near-front & Annealing-Pareto & 13.36 $\pm$ 8.80 & 1.000 & 28001.44 $\pm$ 20428.70 \\
+Misleading near-front & Scalarized UCB & 2158.68 $\pm$ 585.78 & 1.000 & 19495.31 $\pm$ 4953.26 \\
+\midrule
+Friendly near-front & Width-guided & 0.19 $\pm$ 0.14 & 1.000 & 16691.70 $\pm$ 25330.42 \\
+Friendly near-front & Pareto UCB1 & 200.54 $\pm$ 44.32 & 0.950 & 46718.87 $\pm$ 17644.85 \\
+Friendly near-front & Annealing-Pareto & 3.03 $\pm$ 6.95 & 1.000 & 42191.95 $\pm$ 16589.11 \\
+Friendly near-front & Scalarized UCB & 47.52 $\pm$ 7.27 & 1.000 & 22707.02 $\pm$ 4906.22 \\
+\midrule
+Easy separated & Width-guided & 7.53 $\pm$ 3.08 & 1.000 & 12.03 $\pm$ 4.59 \\
+Easy separated & Pareto UCB1 & 2855.97 $\pm$ 455.90 & 1.000 & 6334.71 $\pm$ 2017.09 \\
+Easy separated & Annealing-Pareto & 8.66 $\pm$ 5.15 & 1.000 & 15.40 $\pm$ 9.39 \\
+Easy separated & Scalarized UCB & 1789.05 $\pm$ 175.84 & 1.000 & 3305.71 $\pm$ 537.75 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\begin{minipage}{0.98\linewidth}
+\scriptsize
+Here $\widehat a_T$ is the terminal recommendation, taken to be the arm most frequently played in the final 20\% of rounds. The set $A^\star$ is computed from the empirical mean vectors of the held-out subset. Fairness regret is the cumulative max-min regret $\sum_{t=1}^T (\max_a \min_j \mu_a^{(j)} - \min_j \mu_{A_t}^{(j)})$.
+\end{minipage}
+\end{table}

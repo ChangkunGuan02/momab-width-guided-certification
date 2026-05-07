@@ -1,53 +1,153 @@
-# MOMAB Width-Guided Certification
+# MOMAB Computational Study Artifact
 
-This repository contains the computational code and cached outputs for the width-guided certification study in stochastic multi-objective bandits. It includes only:
+This directory contains the anonymous supplementary artifact for the
+computational study. The bundled outputs reproduce the manuscript tables and
+figures from the prepared benchmark instances included under `data/`.
 
-- runnable experiment code in `code/`
-- cached simulation outputs in `computational_results/`
-- paper figures in `plots/`
+Anonymous repository: upload this directory through `https://anonymous.4open.science/`
+and replace this sentence with the generated anonymous repository URL before
+submission.
 
-It does not include the paper writeup or manuscript LaTeX sources. The only `.tex` file in the repository is a generated table snippet in `computational_results/`.
+## Environment
 
-## Dependencies
+The final rerun reported in the manuscript used:
 
-- Python 3
-- `numpy`
-- `matplotlib`
+- Python 3.9.21
+- NumPy 2.0.2
+- Matplotlib 3.9.4
+- CPU-only Slurm jobs, with no GPU request
 
-Tested with:
-
-- Python `3.12.2`
-- NumPy `1.26.4`
-- Matplotlib `3.10.0`
-
-Install the Python dependencies in your environment before running the scripts, for example:
+Install the Python dependencies with:
 
 ```bash
-pip install numpy matplotlib
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-## Quick Start
+The command-line entry points are script-oriented and should be run from this
+directory as `python3 src/<script>.py ...`.
+Prepared real-data `.npz` instances use NumPy object arrays for variable-length
+empirical reward samples, so replacement instance files should be treated as
+trusted inputs.
 
-From the repository root:
+## Files
+
+- `src/real_benchmark.py`: real-data Spotify and KuaiRec benchmark runner.
+- `src/synthetic_benchmark.py`: sharded synthetic benchmark runner.
+- `src/synthetic_core.py`: shared policy, instance, and metric utilities.
+- `src/synthetic_report.py`: synthetic table and figure generator.
+- `src/prepare_spotify_instance.py`: raw Spotify-to-instance preparation script.
+- `src/prepare_kuairec_cohort_instance.py`: raw KuaiRec-to-instance preparation script.
+- `data/`: prepared benchmark instances used by the manuscript experiments.
+- `data/prepared_instances_manifest.json`: checksums and array schemas for the prepared instances.
+- `data/LICENSES.md`: attribution and license notes for the prepared data files.
+- `frozen_subsets/`: held-out subset definitions used for the manuscript rows.
+- `results/`: bundled final outputs used in the manuscript.
+- `scripts/`: Slurm submission, aggregation, and zip-building helpers.
+- `slurm/`: Slurm array task entry points.
+- `LICENSE`: code license and third-party data notice.
+- `CITATION.cff`: anonymous-review citation metadata.
+
+## Inspect Bundled Outputs
+
+The main bundled real-data outputs are:
+
+- `results/real/spotify_main/tables/table_6_1_main.tex`
+- `results/real/spotify_easy/tables/table_6_1_main.tex`
+- `results/real/kuairec/tables/table_6_1_main.tex`
+
+The main bundled synthetic outputs are:
+
+- `results/synthetic/main/results_table.tex`
+- `results/synthetic/main/summary.json`
+- `results/synthetic/main/figures/comparison_plots.pdf`
+- `results/synthetic/main/figures/trajectory_plots.pdf`
+
+The synthetic trajectory cache is large because it stores full regret paths for
+the trajectory figure. It is included so the manuscript figures can be
+regenerated without re-running the full synthetic simulation.
+
+## Local Smoke Test
+
+The following small synthetic run checks the main code path without Slurm:
 
 ```bash
-python3 code/run_synthetic_experiments.py
-python3 code/plot_synthetic_experiments.py
+python3 src/synthetic_benchmark.py plan --T 20 --n-runs 1 --trajectory-runs 1 \
+  --outdir /tmp/momab_synth_smoke --force-clean
+python3 src/synthetic_benchmark.py run-shard --outdir /tmp/momab_synth_smoke \
+  --shard-index 0 --n-shards 1 --workers 1
+python3 src/synthetic_benchmark.py aggregate --outdir /tmp/momab_synth_smoke
+python3 src/synthetic_report.py --outdir /tmp/momab_synth_smoke \
+  --plots-dir /tmp/momab_synth_smoke/figures
 ```
 
-The first command regenerates the raw simulation caches under `computational_results/momab_synthetic_experiments/`. The second command regenerates the derived summaries and paper figures from those caches.
+For a real-data smoke test, use a temporary output directory so the bundled
+result files are not touched:
 
-## Repository Layout
+```bash
+python3 src/real_benchmark.py plan \
+  --instance data/spotify_genre_instance_d6.npz \
+  --dataset-name spotify_d6 \
+  --outdir /tmp/momab_real_smoke \
+  --T 20 \
+  --n-runs 1 \
+  --seed 20260704 \
+  --k-values 10 \
+  --subset-types easy_separated \
+  --selection-mode geometry \
+  --policies width_guided_c0.02,pareto_ucb1 \
+  --frozen-subsets frozen_subsets/spotify_easy_selected_subsets.json \
+  --force-clean
+python3 src/real_benchmark.py run-local --outdir /tmp/momab_real_smoke \
+  --workers 1 --limit 2
+python3 src/real_benchmark.py aggregate --outdir /tmp/momab_real_smoke \
+  --allow-missing
+```
 
-- `code/`
-  - experiment code and CLI documentation
-- `computational_results/`
-  - raw caches, manifests, JSON summaries, and the LaTeX table
-- `plots/`
-  - PDF figures
+The `--allow-missing` flag is only for partial smoke diagnostics. Final tables
+are generated only after all planned jobs have finished.
 
-## Notes
+## Full Slurm Rerun
 
-- The raw cache files in `computational_results/momab_synthetic_experiments/` are the primary cached outputs.
-- The plotting CLI validates the simulation-side code hashes before regenerating summaries or figures.
-- The detailed CLI arguments and workflow notes are documented in `code/README.md`.
+Full reproduction of the manuscript-facing runs requires a Slurm cluster with
+`sbatch`. Each final run uses the fixed per-shard profile below:
+
+- 20 Slurm array shards
+- 20 CPU cores per shard
+- 40 GB RAM per shard
+- 12 hour wall-clock limit per shard
+- CPU only
+
+The submit scripts refuse to overwrite bundled result outputs by default. To
+replace the bundled outputs in a working copy, set `FORCE_CLEAN=1` explicitly:
+
+```bash
+FORCE_CLEAN=1 bash scripts/submit_real_fixed.sh spotify-main
+FORCE_CLEAN=1 bash scripts/submit_real_fixed.sh spotify-easy
+FORCE_CLEAN=1 bash scripts/submit_real_fixed.sh kuairec
+FORCE_CLEAN=1 bash scripts/submit_synthetic_fixed.sh
+```
+
+After all jobs finish:
+
+```bash
+bash scripts/aggregate_all.sh
+```
+
+The account, partition, and QoS can be set through `ACCOUNT`, `PARTITION`, and
+`QOS`. Without `FORCE_CLEAN=1`, the planner stops if generated outputs already
+exist.
+
+## Build Supplementary Zip
+
+To create the anonymous supplementary zip from this directory:
+
+```bash
+bash scripts/make_supplement_zip.sh
+```
+
+If the output zip already exists, use `FORCE=1 bash scripts/make_supplement_zip.sh`
+to replace it. The zip helper excludes scheduler logs, Python bytecode,
+Matplotlib caches, and local runtime caches that should not be uploaded. It
+keeps the scientific result caches needed to regenerate the manuscript figures.

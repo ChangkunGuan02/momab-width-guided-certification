@@ -1,0 +1,17 @@
+{
+  "job_index": 145,
+  "job_type": "final",
+  "setting_index": 7,
+  "run_idx": 5,
+  "delta": 0.02,
+  "crowd_size": 12,
+  "base_seed": 707,
+  "T": 1000000,
+  "reward_seed": 332234663,
+  "pareto_seed": 763473058,
+  "width_seed": 432278585,
+  "pareto_regret_final": 8618.040000092013,
+  "width_regret_final": 225.74000000001445,
+  "certified_flag": 1.0,
+  "certified_round": 5266.0
+}

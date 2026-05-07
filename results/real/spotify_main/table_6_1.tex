@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Real-data benchmark on held-out subsets. Subsets are grouped by empirical mean geometry before policy simulation. The main target is Pareto regret and detection of at least one Pareto-optimal arm; fairness is reported as a distinct objective.}
+\label{tab:real-main}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccc}
+\toprule
+Subset type & Method & Pareto regret $\downarrow$ & $\Pr(\widehat a_T\in A^\star)\uparrow$ & Fairness regret $\downarrow$ \\
+\midrule
+Misleading near-front & Width-guided & 3.05 $\pm$ 1.99 & 1.000 & 126802.53 $\pm$ 88608.86 \\
+Misleading near-front & Pareto UCB1 & 2584.77 $\pm$ 60.31 & 1.000 & 167441.45 $\pm$ 11006.61 \\
+Misleading near-front & Annealing-Pareto & 337.59 $\pm$ 1504.82 & 0.983 & 137216.88 $\pm$ 25311.01 \\
+Misleading near-front & Scalarized UCB & 1435.03 $\pm$ 258.58 & 1.000 & 106619.47 $\pm$ 21408.46 \\
+\midrule
+Friendly near-front & Width-guided & 0.12 $\pm$ 0.07 & 1.000 & 139529.83 $\pm$ 92629.78 \\
+Friendly near-front & Pareto UCB1 & 212.44 $\pm$ 61.38 & 0.967 & 215519.48 $\pm$ 24354.66 \\
+Friendly near-front & Annealing-Pareto & 26.81 $\pm$ 71.75 & 0.983 & 205315.39 $\pm$ 36239.70 \\
+Friendly near-front & Scalarized UCB & 65.10 $\pm$ 39.01 & 1.000 & 155208.99 $\pm$ 26235.67 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\begin{minipage}{0.98\linewidth}
+\scriptsize
+Here $\widehat a_T$ is the terminal recommendation, taken to be the arm most frequently played in the final 20\% of rounds. The set $A^\star$ is computed from the empirical mean vectors of the held-out subset. Fairness regret is the cumulative max-min regret $\sum_{t=1}^T (\max_a \min_j \mu_a^{(j)} - \min_j \mu_{A_t}^{(j)})$.
+\end{minipage}
+\end{table}

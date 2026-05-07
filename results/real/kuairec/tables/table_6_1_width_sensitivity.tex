@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Width-guided radius-scale sensitivity on held-out subsets. The coefficient $c$ is defined by $\beta_a(t)=\sqrt{c\log(T)/N_a(t-1)}$; $c=2$ is the theorem-matched coefficient.}
+\label{tab:app-width-sensitivity}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllcccc}
+\toprule
+Dataset & Subset type & $c$ & Pareto regret $\downarrow$ & $\Pr(\widehat a_T\in A^\star)\uparrow$ & Cert. rate $\uparrow$ & Median cert. round $\downarrow$ \\
+\midrule
+kuairec\_d26 & Misleading near-front & 0.02 & 8.00 $\pm$ 4.41 & 1.000 & 1.000 & 458 \\
+\midrule
+kuairec\_d26 & Friendly near-front & 0.02 & 0.19 $\pm$ 0.14 & 1.000 & 1.000 & 560 \\
+\midrule
+kuairec\_d26 & Easy separated & 0.02 & 7.53 $\pm$ 3.08 & 1.000 & 1.000 & 92 \\
+\bottomrule
+\end{tabular}
+\end{table}

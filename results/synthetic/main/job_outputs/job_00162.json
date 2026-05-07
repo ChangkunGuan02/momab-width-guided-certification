@@ -1,0 +1,18 @@
+{
+  "job_index": 162,
+  "job_type": "trajectory",
+  "setting_index": 0,
+  "run_idx": 2,
+  "delta": 0.12,
+  "crowd_size": 1,
+  "base_seed": 1007,
+  "T": 1000000,
+  "reward_seed": 83863523,
+  "pareto_seed": 196595245,
+  "width_seed": 424274689,
+  "pareto_regret_final": 2497.879999999789,
+  "width_regret_final": 458.11999999998574,
+  "certified_flag": 1.0,
+  "certified_round": 3100.0,
+  "trajectory_cache": "job_00162.npz"
+}

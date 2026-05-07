@@ -1,0 +1,37 @@
+{
+  "job_index": 62,
+  "dataset_name": "spotify_d6",
+  "instance": "data/spotify_genre_instance_d6.npz",
+  "T": 1000000,
+  "subset_id": 0,
+  "subset_type": "easy_separated",
+  "subset_type_label": "Easy separated",
+  "k": 10,
+  "indices": [
+    8,
+    13,
+    31,
+    32,
+    46,
+    81,
+    83,
+    97,
+    99,
+    101
+  ],
+  "run_idx": 15,
+  "policy": "annealing_pareto",
+  "reward_seed": 20260719,
+  "policy_seed": 20410706,
+  "gap_tol": 1e-12,
+  "metrics": {
+    "final_regret": 0.8448582819335884,
+    "terminal_zero_regret": 1.0,
+    "terminal_pareto_optimal": 1.0,
+    "fairness_regret": 144338.16047749613,
+    "front_precision": 1.0,
+    "front_recall": 1.0,
+    "front_coverage_entropy": 0.8982581797061193
+  },
+  "terminal_recommendation_arm": 8
+}

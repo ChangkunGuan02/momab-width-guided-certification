@@ -1,0 +1,833 @@
+[
+  {
+    "subset_id": 0,
+    "subset_type": "misleading_near_front",
+    "subset_type_label": "Misleading near-front",
+    "k": 10,
+    "indices": [
+      7,
+      22,
+      24,
+      50,
+      57,
+      64,
+      66,
+      74,
+      81,
+      83
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 5,
+      "pareto_indices": [
+        0,
+        3,
+        5,
+        8,
+        9
+      ],
+      "g_dagger": 0.3758555983237754,
+      "objective_winner_gaps": [
+        0.06935103440113805,
+        0.07251903807615212,
+        0.0036329979959917047,
+        0.009572614328656637,
+        0.3758555983237754,
+        0.06377939879759664
+      ],
+      "delta_min_p": 0.006072144288571946,
+      "delta_median_positive_p": 0.011746633266529583,
+      "sum_inv_delta_p": 482.0655272637258,
+      "positive_gap_arms": 5,
+      "zero_gap_arms": 5,
+      "near_positive_gap_arms": 5,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 5,
+      "separated_positive_gap_arms": 0,
+      "misleading_near_burden": 482.0655272637258,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 153.87079537572865
+    },
+    "selection_scores": {
+      "misleading_score": 5006.180152311664,
+      "friendly_score": 4493.819847688336,
+      "easy_score": -2468.594592479286
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "ska",
+        "j-rock",
+        "indie-pop",
+        "guitar",
+        "dub",
+        "anime",
+        "alternative",
+        "j-pop",
+        "forro",
+        "detroit-techno"
+      ],
+      "arm_names": [
+        "ska",
+        "j-rock",
+        "indie-pop",
+        "guitar",
+        "dub",
+        "anime",
+        "alternative",
+        "j-pop",
+        "forro",
+        "detroit-techno"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 1,
+    "subset_type": "misleading_near_front",
+    "subset_type_label": "Misleading near-front",
+    "k": 10,
+    "indices": [
+      18,
+      22,
+      25,
+      34,
+      37,
+      57,
+      79,
+      81,
+      89,
+      101
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 5,
+      "pareto_indices": [
+        0,
+        4,
+        7,
+        8,
+        9
+      ],
+      "g_dagger": 0.10744887660517366,
+      "objective_winner_gaps": [
+        0.024663366733474523,
+        0.10744887660517366,
+        0.02554529058116295,
+        0.001051029719727814,
+        0.08026118162551377,
+        0.07252139879759523
+      ],
+      "delta_min_p": 0.008986633266530708,
+      "delta_median_positive_p": 0.011309626259524919,
+      "sum_inv_delta_p": 415.8290756581819,
+      "positive_gap_arms": 5,
+      "zero_gap_arms": 5,
+      "near_positive_gap_arms": 4,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 4,
+      "separated_positive_gap_arms": 1,
+      "misleading_near_burden": 369.059810282432,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 37.944237625469405
+    },
+    "selection_scores": {
+      "misleading_score": 4005.9136646419865,
+      "friendly_score": 4594.0863353580135,
+      "easy_score": -995.2877885867454
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "pagode",
+        "j-rock",
+        "garage",
+        "turkish",
+        "show-tunes",
+        "dub",
+        "groove",
+        "forro",
+        "bluegrass",
+        "latino"
+      ],
+      "arm_names": [
+        "pagode",
+        "j-rock",
+        "garage",
+        "turkish",
+        "show-tunes",
+        "dub",
+        "groove",
+        "forro",
+        "bluegrass",
+        "latino"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 2,
+    "subset_type": "misleading_near_front",
+    "subset_type_label": "Misleading near-front",
+    "k": 10,
+    "indices": [
+      1,
+      3,
+      9,
+      15,
+      22,
+      44,
+      57,
+      65,
+      66,
+      81
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 5,
+      "pareto_indices": [
+        0,
+        2,
+        3,
+        7,
+        9
+      ],
+      "g_dagger": 0.11297039879759574,
+      "objective_winner_gaps": [
+        0.03657791791791476,
+        0.09538410621242399,
+        0.028817002004006276,
+        0.002838747661989882,
+        0.06950829395895852,
+        0.11297039879759574
+      ],
+      "delta_min_p": 0.009572614328656637,
+      "delta_median_positive_p": 0.015902017515175948,
+      "sum_inv_delta_p": 305.81146986744307,
+      "positive_gap_arms": 5,
+      "zero_gap_arms": 5,
+      "near_positive_gap_arms": 4,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 4,
+      "separated_positive_gap_arms": 1,
+      "misleading_near_burden": 283.207941693904,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 29.339150260285823
+    },
+    "selection_scores": {
+      "misleading_score": 4005.6497061593045,
+      "friendly_score": 4594.3502938406955,
+      "easy_score": -994.4291935745217
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "tango",
+        "swedish",
+        "sertanejo",
+        "reggae",
+        "j-rock",
+        "jazz",
+        "dub",
+        "ambient",
+        "alternative",
+        "forro"
+      ],
+      "arm_names": [
+        "tango",
+        "swedish",
+        "sertanejo",
+        "reggae",
+        "j-rock",
+        "jazz",
+        "dub",
+        "ambient",
+        "alternative",
+        "forro"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 3,
+    "subset_type": "friendly_near_front",
+    "subset_type_label": "Friendly near-front",
+    "k": 10,
+    "indices": [
+      5,
+      7,
+      45,
+      51,
+      53,
+      80,
+      81,
+      94,
+      96,
+      103
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 8,
+      "pareto_indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "g_dagger": 0.1736733475582336,
+      "objective_winner_gaps": [
+        0.07750919255929617,
+        0.001562200937626712,
+        0.0557297523976904,
+        0.022453521357029826,
+        0.1736733475582336,
+        0.06377939879759664
+      ],
+      "delta_min_p": 0.001562200937626712,
+      "delta_median_positive_p": 0.0017362138988771536,
+      "sum_inv_delta_p": 1163.6205503773049,
+      "positive_gap_arms": 2,
+      "zero_gap_arms": 8,
+      "near_positive_gap_arms": 2,
+      "tiny_positive_gap_arms": 2,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 0,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 1163.6205503773049,
+      "c_pucb_exact": 172.99729547206164
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 10000.0,
+      "easy_score": -989.6928158492915
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "songwriter",
+        "ska",
+        "j-idol",
+        "grunge",
+        "gospel",
+        "grindcore",
+        "forro",
+        "power-pop",
+        "comedy",
+        "edm"
+      ],
+      "arm_names": [
+        "songwriter",
+        "ska",
+        "j-idol",
+        "grunge",
+        "gospel",
+        "grindcore",
+        "forro",
+        "power-pop",
+        "comedy",
+        "edm"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 4,
+    "subset_type": "friendly_near_front",
+    "subset_type_label": "Friendly near-front",
+    "k": 10,
+    "indices": [
+      6,
+      13,
+      18,
+      30,
+      65,
+      69,
+      74,
+      78,
+      79,
+      109
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 8,
+      "pareto_indices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "g_dagger": 0.10116833667334657,
+      "objective_winner_gaps": [
+        0.0008979179179215424,
+        0.10116833667334657,
+        0.03098617234469181,
+        0.0023874582498319974,
+        0.06563430893095046,
+        0.05475883588175312
+      ],
+      "delta_min_p": 0.00021691666666701082,
+      "delta_median_positive_p": 0.0008891407982631327,
+      "sum_inv_delta_p": 5250.530571968607,
+      "positive_gap_arms": 2,
+      "zero_gap_arms": 8,
+      "near_positive_gap_arms": 2,
+      "tiny_positive_gap_arms": 2,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 0,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 5250.530571968607,
+      "c_pucb_exact": 454.71843025052794
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 10000.0,
+      "easy_score": -998.4494411832801
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "sleep",
+        "rock",
+        "pagode",
+        "country",
+        "ambient",
+        "study",
+        "j-pop",
+        "hard-rock",
+        "groove",
+        "honky-tonk"
+      ],
+      "arm_names": [
+        "sleep",
+        "rock",
+        "pagode",
+        "country",
+        "ambient",
+        "study",
+        "j-pop",
+        "hard-rock",
+        "groove",
+        "honky-tonk"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 5,
+    "subset_type": "friendly_near_front",
+    "subset_type_label": "Friendly near-front",
+    "k": 10,
+    "indices": [
+      15,
+      23,
+      31,
+      32,
+      40,
+      43,
+      48,
+      64,
+      91,
+      111
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 8,
+      "pareto_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "g_dagger": 0.13887346206999973,
+      "objective_winner_gaps": [
+        0.08140140140140234,
+        0.09775442342342378,
+        0.019415970670670468,
+        0.0021795194361036163,
+        0.13887346206999973,
+        0.09084711811811741
+      ],
+      "delta_min_p": 0.0003023409859894688,
+      "delta_median_positive_p": 0.0011360053278292592,
+      "sum_inv_delta_p": 3815.223121671093,
+      "positive_gap_arms": 2,
+      "zero_gap_arms": 8,
+      "near_positive_gap_arms": 2,
+      "tiny_positive_gap_arms": 2,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 0,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 3815.223121671093,
+      "c_pucb_exact": 453.5591780429236
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 10000.0,
+      "easy_score": -994.3596702938985
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "reggae",
+        "industrial",
+        "british",
+        "acoustic",
+        "progressive-house",
+        "k-pop",
+        "hardcore",
+        "anime",
+        "indie",
+        "german"
+      ],
+      "arm_names": [
+        "reggae",
+        "industrial",
+        "british",
+        "acoustic",
+        "progressive-house",
+        "k-pop",
+        "hardcore",
+        "anime",
+        "indie",
+        "german"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 6,
+    "subset_type": "easy_separated",
+    "subset_type_label": "Easy separated",
+    "k": 10,
+    "indices": [
+      9,
+      29,
+      30,
+      31,
+      46,
+      52,
+      57,
+      75,
+      78,
+      108
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 6,
+      "pareto_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8
+      ],
+      "g_dagger": 0.08426757557557563,
+      "objective_winner_gaps": [
+        0.016625285285291003,
+        0.08426757557557563,
+        0.05386188356733734,
+        0.009352426509842249,
+        0.048542412232232324,
+        0.051428799999999275
+      ],
+      "delta_min_p": 0.02360121531531517,
+      "delta_median_positive_p": 0.02706531372638271,
+      "sum_inv_delta_p": 133.98785490328157,
+      "positive_gap_arms": 4,
+      "zero_gap_arms": 6,
+      "near_positive_gap_arms": 0,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 4,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 9.618397004542427
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 6000.0,
+      "easy_score": 4003.521572746846
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "sertanejo",
+        "disco",
+        "country",
+        "british",
+        "indian",
+        "goth",
+        "dub",
+        "idm",
+        "hard-rock",
+        "iranian"
+      ],
+      "arm_names": [
+        "sertanejo",
+        "disco",
+        "country",
+        "british",
+        "indian",
+        "goth",
+        "dub",
+        "idm",
+        "hard-rock",
+        "iranian"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 7,
+    "subset_type": "easy_separated",
+    "subset_type_label": "Easy separated",
+    "k": 10,
+    "indices": [
+      4,
+      30,
+      33,
+      41,
+      58,
+      74,
+      80,
+      81,
+      92,
+      108
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 5,
+      "pareto_indices": [
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "g_dagger": 0.30186451311311485,
+      "objective_winner_gaps": [
+        0.17399399399398702,
+        0.04563689378757607,
+        0.04960118089740151,
+        0.018614612558449428,
+        0.30186451311311485,
+        0.21200329879759605
+      ],
+      "delta_min_p": 0.006072144288571946,
+      "delta_median_positive_p": 0.0258056389723057,
+      "sum_inv_delta_p": 310.4536166929144,
+      "positive_gap_arms": 5,
+      "zero_gap_arms": 5,
+      "near_positive_gap_arms": 1,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 1,
+      "separated_positive_gap_arms": 4,
+      "misleading_near_burden": 164.68646864700597,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 79.58622103649907
+    },
+    "selection_scores": {
+      "misleading_score": 1005.1100972593418,
+      "friendly_score": 4894.889902740658,
+      "easy_score": 3524.4452008872436
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "spanish",
+        "country",
+        "world-music",
+        "pop-film",
+        "disney",
+        "j-pop",
+        "grindcore",
+        "forro",
+        "black-metal",
+        "iranian"
+      ],
+      "arm_names": [
+        "spanish",
+        "country",
+        "world-music",
+        "pop-film",
+        "disney",
+        "j-pop",
+        "grindcore",
+        "forro",
+        "black-metal",
+        "iranian"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  },
+  {
+    "subset_id": 8,
+    "subset_type": "easy_separated",
+    "subset_type_label": "Easy separated",
+    "k": 10,
+    "indices": [
+      0,
+      2,
+      9,
+      54,
+      72,
+      79,
+      81,
+      93,
+      107,
+      112
+    ],
+    "metadata": {
+      "k": 10,
+      "d": 6,
+      "pareto_size": 7,
+      "pareto_indices": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "g_dagger": 0.4799214613504845,
+      "objective_winner_gaps": [
+        0.04967405622489751,
+        0.007905530252425574,
+        0.02554529058116295,
+        0.0024954471569419434,
+        0.4799214613504845,
+        0.1284024291006265
+      ],
+      "delta_min_p": 0.02138156312625139,
+      "delta_median_positive_p": 0.029283893787575677,
+      "sum_inv_delta_p": 101.04896262377659,
+      "positive_gap_arms": 3,
+      "zero_gap_arms": 7,
+      "near_positive_gap_arms": 0,
+      "tiny_positive_gap_arms": 0,
+      "misleading_near_positive_gap_arms": 0,
+      "separated_positive_gap_arms": 3,
+      "misleading_near_burden": 0.0,
+      "tiny_near_burden": 0.0,
+      "c_pucb_exact": 41.420465741252706
+    },
+    "selection_scores": {
+      "misleading_score": 0.0,
+      "friendly_score": 7000.0,
+      "easy_score": 3043.3666934112166
+    },
+    "contamination_scores": {},
+    "labels": {
+      "arm_ids": [
+        "techno",
+        "synth-pop",
+        "sertanejo",
+        "french",
+        "minimal-techno",
+        "groove",
+        "forro",
+        "psych-rock",
+        "latin",
+        "classical"
+      ],
+      "arm_names": [
+        "techno",
+        "synth-pop",
+        "sertanejo",
+        "french",
+        "minimal-techno",
+        "groove",
+        "forro",
+        "psych-rock",
+        "latin",
+        "classical"
+      ],
+      "objective_names": [
+        "popularity",
+        "danceability",
+        "energy",
+        "loudness",
+        "acousticness",
+        "valence"
+      ]
+    }
+  }
+]

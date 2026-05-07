@@ -1,0 +1,90 @@
+{
+  "spotify_genre_instance_d6.npz": {
+    "source": "Spotify Tracks dataset mirror on Hugging Face",
+    "source_url": "https://huggingface.co/datasets/sfiore/spotify-tracks-dataset",
+    "source_license": "bsd, as listed by the Hugging Face dataset card used by the preparation script; BSD variant not specified upstream",
+    "prepared_data_license": "subject to the upstream Spotify Tracks dataset terms; see LICENSES.md",
+    "attribution": "Spotify Tracks dataset mirror on Hugging Face",
+    "changes_made": "Genre arms were retained, duplicate track IDs were removed within genre by default, six normalized objectives were selected, and reward coordinates were scaled to [0,1].",
+    "sha256": "72d5c5471bde07b3a61927c174bf9b827e1be1a729d304683714dcfc5011dc13",
+    "n_arms": 114,
+    "n_objectives": 6,
+    "objectives": [
+      "popularity",
+      "danceability",
+      "energy",
+      "loudness",
+      "acousticness",
+      "valence"
+    ],
+    "arrays": {
+      "mu": {
+        "shape": [114, 6],
+        "dtype": "float64",
+        "description": "Mean reward vector for each genre arm."
+      },
+      "reward_values": {
+        "shape": [114],
+        "dtype": "object",
+        "description": "One variable-length array of track reward samples per arm."
+      },
+      "arm_ids": {
+        "shape": [114],
+        "dtype": "unicode"
+      },
+      "arm_names": {
+        "shape": [114],
+        "dtype": "unicode"
+      },
+      "track_counts": {
+        "shape": [114],
+        "dtype": "int64"
+      },
+      "objective_names": {
+        "shape": [6],
+        "dtype": "unicode"
+      }
+    }
+  },
+  "kuairec_cohort_instance_d26.npz": {
+    "source": "KuaiRec 2.0",
+    "source_url": "https://github.com/chongminggao/KuaiRec",
+    "source_license": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "prepared_data_license": "Creative Commons Attribution-ShareAlike 4.0 International, following the upstream KuaiRec GitHub repository used in the manuscript; see LICENSES.md",
+    "attribution": "KuaiRec 2.0",
+    "changes_made": "Video arms were retained, user cohorts were formed from user_active_degree, follow_user_num_range, and register_days_range, 26 cohort objectives were selected, watch-ratio rewards were clipped and normalized to [0,1], and 300 video arms were retained.",
+    "sha256": "a6ecfe7db615ea793abfed3718a0e9fffdac44068e004a0bf6140cf427bd3043",
+    "n_arms": 300,
+    "n_objectives": 26,
+    "objective_construction": "Joint cohorts from user_active_degree, follow_user_num_range, and register_days_range.",
+    "arrays": {
+      "mu": {
+        "shape": [300, 26],
+        "dtype": "float64",
+        "description": "Mean normalized watch-ratio vector for each video arm."
+      },
+      "objective_values": {
+        "shape": [300],
+        "dtype": "object",
+        "description": "One variable-length collection of reward samples per arm and objective."
+      },
+      "arm_ids": {
+        "shape": [300],
+        "dtype": "unicode"
+      },
+      "arm_names": {
+        "shape": [300],
+        "dtype": "unicode"
+      },
+      "sample_counts": {
+        "shape": [300, 26],
+        "dtype": "int64"
+      },
+      "objective_names": {
+        "shape": [26],
+        "dtype": "unicode"
+      }
+    }
+  }
+}

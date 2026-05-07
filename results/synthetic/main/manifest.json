@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "experiment_family": "synthetic_family_fixed_certification_gap_and_small_pareto_gaps",
+  "config": {
+    "T": 1000000,
+    "n_runs": 20,
+    "trajectory_runs": 20,
+    "seed": 7,
+    "runner": "synthetic_benchmark.py"
+  },
+  "files": {
+    "run_cache": "run_cache.npz",
+    "trajectory_cache": "trajectory_cache.npz"
+  },
+  "provenance": {
+    "python_version": "3.9.21 (main, Aug 19 2025, 00:00:00) \n[GCC 11.5.0 20240719 (Red Hat 11.5.0-5)]",
+    "platform": "Linux-5.14.0-570.62.1.el9_6.x86_64-x86_64-with-glibc2.34",
+    "numpy_version": "2.0.2",
+    "simulation_source_hashes": {
+      "synthetic_core.py": "73e78f9441f022daa08bc1366bc55d8cd268598e776b9f2b2db39a0e06cdab37",
+      "synthetic_benchmark.py": "89d5e9d589754ae075abc82cd30d1bb9ced7b2431b5426b9b76072dcb07e85f4"
+    }
+  },
+  "final_settings": [
+    {
+      "index": 0,
+      "family": "delta_variation",
+      "label": "(0.12, 1)",
+      "delta": 0.12,
+      "crowd_size": 1,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.12
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.12,
+      "sum_inv_delta_p": 93.33333333333334,
+      "c_pucb_exact": 21.048429103691706,
+      "c_pucb_envelope": 33.827832488075956
+    },
+    {
+      "index": 1,
+      "family": "delta_variation",
+      "label": "(0.08, 1)",
+      "delta": 0.08,
+      "crowd_size": 1,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.07999999999999996
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.07999999999999996,
+      "sum_inv_delta_p": 97.5,
+      "c_pucb_exact": 21.988091117249372,
+      "c_pucb_envelope": 50.741748732113955
+    },
+    {
+      "index": 2,
+      "family": "delta_variation",
+      "label": "(0.04, 1)",
+      "delta": 0.04,
+      "crowd_size": 1,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.040000000000000036
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.040000000000000036,
+      "sum_inv_delta_p": 109.99999999999997,
+      "c_pucb_exact": 24.80707715792236,
+      "c_pucb_envelope": 101.48349746422778
+    },
+    {
+      "index": 3,
+      "family": "delta_variation",
+      "label": "(0.02, 1)",
+      "delta": 0.02,
+      "crowd_size": 1,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.020000000000000018
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.020000000000000018,
+      "sum_inv_delta_p": 134.99999999999994,
+      "c_pucb_exact": 30.445049239268346,
+      "c_pucb_envelope": 202.96699492845556
+    },
+    {
+      "index": 4,
+      "family": "delta_variation",
+      "label": "(0.01, 1)",
+      "delta": 0.01,
+      "crowd_size": 1,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.010000000000000009
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.010000000000000009,
+      "sum_inv_delta_p": 184.99999999999991,
+      "c_pucb_exact": 41.72099340196033,
+      "c_pucb_envelope": 405.9339898569111
+    },
+    {
+      "index": 5,
+      "family": "crowd_variation",
+      "label": "(0.02, 4)",
+      "delta": 0.02,
+      "crowd_size": 4,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.020000000000000018
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.020000000000000018,
+      "sum_inv_delta_p": 269.99999999999983,
+      "c_pucb_exact": 60.89009847853668,
+      "c_pucb_envelope": 202.96699492845556
+    },
+    {
+      "index": 6,
+      "family": "crowd_variation",
+      "label": "(0.02, 8)",
+      "delta": 0.02,
+      "crowd_size": 8,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.020000000000000018
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.020000000000000018,
+      "sum_inv_delta_p": 449.99999999999966,
+      "c_pucb_exact": 101.4834974642278,
+      "c_pucb_envelope": 202.96699492845556
+    },
+    {
+      "index": 7,
+      "family": "crowd_variation",
+      "label": "(0.02, 12)",
+      "delta": 0.02,
+      "crowd_size": 12,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.020000000000000018
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.020000000000000018,
+      "sum_inv_delta_p": 629.9999999999995,
+      "c_pucb_exact": 142.0768964499189,
+      "c_pucb_envelope": 202.96699492845556
+    }
+  ],
+  "trajectory_settings": [
+    {
+      "index": 0,
+      "label": "(0.12, 1)",
+      "description": "$(\\delta,m)=(0.12,1)$",
+      "family": "delta_variation",
+      "delta": 0.12,
+      "crowd_size": 1,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.12
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.12,
+      "sum_inv_delta_p": 93.33333333333334,
+      "c_pucb_exact": 21.048429103691706,
+      "c_pucb_envelope": 33.827832488075956
+    },
+    {
+      "index": 1,
+      "label": "(0.02, 8)",
+      "description": "$(\\delta,m)=(0.02,8)$",
+      "family": "crowd_variation",
+      "delta": 0.02,
+      "crowd_size": 8,
+      "k": 20,
+      "d": 2,
+      "pareto_size": 2,
+      "gaps_by_objective": [
+        0.55,
+        0.020000000000000018
+      ],
+      "g_dagger": 0.55,
+      "delta_min_p": 0.020000000000000018,
+      "sum_inv_delta_p": 449.99999999999966,
+      "c_pucb_exact": 101.4834974642278,
+      "c_pucb_envelope": 202.96699492845556
+    }
+  ],
+  "n_jobs": 200
+}

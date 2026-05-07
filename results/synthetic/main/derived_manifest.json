@@ -1,0 +1,18 @@
+{
+  "source_manifest": "manifest.json",
+  "source_files": {
+    "run_cache": "run_cache.npz",
+    "trajectory_cache": "trajectory_cache.npz"
+  },
+  "plotting_source_hashes": {
+    "synthetic_core.py": "73e78f9441f022daa08bc1366bc55d8cd268598e776b9f2b2db39a0e06cdab37",
+    "synthetic_report.py": "d593573959b695bbd7bcfa01105781c6626231ce072ded1d68b788949ef6374f"
+  },
+  "matplotlib_version": "3.9.4",
+  "derived_outputs": {
+    "summary": "summary.json",
+    "trajectory_summary": "trajectory_summary.json",
+    "results_table": "results_table.tex",
+    "plots_dir": "figures"
+  }
+}

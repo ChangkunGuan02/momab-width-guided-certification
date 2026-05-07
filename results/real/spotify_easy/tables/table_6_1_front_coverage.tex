@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Front-identification and coverage diagnostics on the same held-out subsets. These metrics evaluate full-front learning rather than Pareto-regret certification.}
+\label{tab:real-front-coverage}
+\scriptsize
+\begin{tabular}{llccc}
+\toprule
+Subset type & Method & Front precision $\uparrow$ & Front recall $\uparrow$ & Coverage entropy $\uparrow$ \\
+\midrule
+Easy separated & Width-guided & 0.713 $\pm$ 0.091 & 0.919 $\pm$ 0.117 & 0.000 $\pm$ 0.000 \\
+Easy separated & Pareto UCB1 & 1.000 $\pm$ 0.000 & 0.972 $\pm$ 0.063 & 1.000 $\pm$ 0.001 \\
+Easy separated & Annealing-Pareto & 0.852 $\pm$ 0.131 & 0.881 $\pm$ 0.131 & 0.838 $\pm$ 0.118 \\
+Easy separated & Scalarized UCB & 1.000 $\pm$ 0.000 & 0.964 $\pm$ 0.069 & 0.733 $\pm$ 0.062 \\
+\bottomrule
+\end{tabular}
+\end{table}

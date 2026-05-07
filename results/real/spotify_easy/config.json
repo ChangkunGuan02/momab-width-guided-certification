@@ -1,0 +1,31 @@
+{
+  "dataset_name": "spotify_d6",
+  "instance": "data/spotify_genre_instance_d6.npz",
+  "T": 1000000,
+  "n_runs": 20,
+  "seed": 20260704,
+  "k_values": [
+    10
+  ],
+  "n_subsets": 3,
+  "n_candidates": 2000,
+  "enumerate_limit": 300000,
+  "subset_types": [
+    "easy_separated"
+  ],
+  "policies": [
+    "width_guided_c0.0089410106",
+    "pareto_ucb1",
+    "annealing_pareto",
+    "scalarized_ucb_multi"
+  ],
+  "policies_by_type": null,
+  "frozen_subsets": "frozen_subsets/spotify_easy_selected_subsets.json",
+  "near_gap": 0.02,
+  "tiny_gap": 0.002,
+  "gap_tol": 1e-12,
+  "selection_mode": "geometry",
+  "contamination_samples_per_arm": 50,
+  "contamination_bootstraps": 64,
+  "contamination_prefilter": 500
+}

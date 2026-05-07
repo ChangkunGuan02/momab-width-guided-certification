@@ -1,0 +1,39 @@
+{
+  "config": {
+    "T": 1000000,
+    "n_runs": 20,
+    "trajectory_runs": 20,
+    "seed": 7,
+    "runner": "synthetic_benchmark.py"
+  },
+  "settings": [
+    {
+      "index": 0,
+      "label": "(0.12, 1)",
+      "description": "$(\\delta,m)=(0.12,1)$",
+      "family": "delta_variation",
+      "delta": 0.12,
+      "crowd_size": 1,
+      "g_dagger": 0.55,
+      "delta_min_p": 0.12,
+      "c_pucb_exact": 21.048429103691706,
+      "width_certified_runs": 20,
+      "width_certified_round_mean_observed": 3140.0,
+      "width_certified_round_median_observed": 3095.5
+    },
+    {
+      "index": 1,
+      "label": "(0.02, 8)",
+      "description": "$(\\delta,m)=(0.02,8)$",
+      "family": "crowd_variation",
+      "delta": 0.02,
+      "crowd_size": 8,
+      "g_dagger": 0.55,
+      "delta_min_p": 0.020000000000000018,
+      "c_pucb_exact": 101.4834974642278,
+      "width_certified_runs": 20,
+      "width_certified_round_mean_observed": 4421.9,
+      "width_certified_round_median_observed": 4371.0
+    }
+  ]
+}
