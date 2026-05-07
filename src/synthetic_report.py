@@ -263,7 +263,7 @@ def _write_summary_outputs(out_dir: Path, manifest: Dict[str, object], rows: Lis
             f"at $T={_format_horizon_for_latex(t_horizon)}$; $g^\\dagger=0.55$ throughout and "
             "$\\delta=\\Delta_{\\min}^{\\mathrm{P}}$. Entries report mean $\\pm$ standard deviation over runs.}\n"
         )
-        f.write("\\label{tab:neurips-pucb-vs-width}\n")
+        f.write("\\label{tab:pucb-vs-width}\n")
         f.write("\\small\n")
         f.write("\\begin{tabular}{cccccc}\n")
         f.write("\\hline\n")

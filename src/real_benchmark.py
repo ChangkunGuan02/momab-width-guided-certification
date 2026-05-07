@@ -1,4 +1,4 @@
-"""Real-data outcome benchmark for the supplementary artifact.
+"""Real-data outcome benchmark runner.
 
 This runner selects held-out real-data subsets by empirical mean geometry,
 runs the paper-facing methods, and reports the outcome metrics used in the

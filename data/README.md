@@ -35,8 +35,7 @@ KuaiRec source:
 The Spotify instance treats genres as arms and track feature vectors as reward
 samples. The prepared file used in the experiments keeps the six objectives
 reported in the paper.
-The commands below are written to be run from the artifact root,
-`code_publish/`.
+The commands below are written to be run from the repository root.
 
 ```bash
 python3 src/prepare_spotify_instance.py \

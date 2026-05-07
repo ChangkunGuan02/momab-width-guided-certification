@@ -14,9 +14,9 @@ array job with:
 - conservative 12 hour wall-clock limit per shard
 - no GPU request
 
-On the execution cluster, all completed final-evaluation shards finished within
-6 minutes of wall-clock time, excluding scheduler queueing. Scheduler logs are
-not bundled, because they can contain cluster-specific usernames and paths.
+On the execution cluster, all completed shards finished within 6 minutes of
+wall-clock time, excluding scheduler queueing. Scheduler logs are not bundled,
+because they can contain cluster-specific usernames and paths.
 
 ## Main Outputs
 
@@ -33,9 +33,7 @@ Synthetic outputs:
 - `synthetic/main/figures/comparison_plots.pdf`
 - `synthetic/main/figures/trajectory_plots.pdf`
 
-The real-data metadata uses paths relative to the artifact root, including
+The real-data metadata records paths relative to the repository root, including
 `data/` for prepared instances and `frozen_subsets/` for frozen subset files.
-The synthetic manifest records the raw runner hash from the final evaluation
-run. The report generator validates the numerical simulation core
-(`synthetic_core.py`) before regenerating tables and figures, so later
-packaging-only edits to the sharded runner do not force a full synthetic rerun.
+The synthetic directory contains the table, summary, figures, and per-job
+outputs used for the reported synthetic results.

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this artifact, please cite the accompanying NeurIPS 2026 submission. Bundled prepared data have separate attribution and license notes in data/LICENSES.md. Replace the anonymous author entry after review."
+message: "If you use this artifact, please cite the accompanying manuscript. Prepared data have separate attribution and license notes in data/LICENSES.md."
 title: "Computational Artifact for Are Stochastic Multi-objective Bandits Harder than Single-objective Bandits?"
 authors:
-  - name: "Anonymous"
-version: "anonymous-review"
+  - name: "The authors"
+version: "0.1.0"
 date-released: "2026-05-06"

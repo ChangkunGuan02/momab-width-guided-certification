@@ -6,7 +6,7 @@ prepared benchmark instances included under `data/`.
 
 ## Environment
 
-The final rerun reported in the manuscript used:
+The reported rerun used:
 
 - Python 3.9.21
 - NumPy 2.0.2
@@ -107,8 +107,8 @@ are generated only after all planned jobs have finished.
 
 ## Full Slurm Rerun
 
-Full reproduction of the manuscript-facing runs requires a Slurm cluster with
-`sbatch`. Each final run uses the fixed per-shard profile below:
+Full reproduction of the reported runs requires a Slurm cluster with `sbatch`.
+Each run uses the fixed per-shard profile below:
 
 - 20 Slurm array shards
 - 20 CPU cores per shard
