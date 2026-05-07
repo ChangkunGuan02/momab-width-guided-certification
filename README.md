@@ -64,9 +64,10 @@ The main bundled synthetic outputs are:
 - `results/synthetic/main/figures/comparison_plots.pdf`
 - `results/synthetic/main/figures/trajectory_plots.pdf`
 
-The synthetic trajectory cache is large because it stores full regret paths for
-the trajectory figure. It is included so the manuscript figures can be
-regenerated without re-running the full synthetic simulation.
+The final synthetic PDFs and per-job trajectory outputs are included. The large
+aggregated trajectory cache (`results/synthetic/main/trajectory_cache.npz`) is
+omitted from GitHub; it can be included in the supplementary zip when present
+locally or regenerated from the bundled job outputs.
 
 ## Local Smoke Test
 
