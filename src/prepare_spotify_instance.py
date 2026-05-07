@@ -2,8 +2,8 @@
 
 Each genre is treated as an arm. Each track in that genre is treated as one
 stochastic reward vector. The default objectives are popularity and normalized
-audio features, giving a moderate-dimensional real-data benchmark for Section
-6.1 without adding synthetic objectives.
+audio features, giving a moderate-dimensional real-data benchmark without
+adding synthetic objectives.
 """
 
 from __future__ import annotations

@@ -29,7 +29,7 @@ from synthetic_core import (
 def _parse_args() -> argparse.Namespace:
     """Parse command-line arguments for the plotting/reporting CLI."""
     parser = argparse.ArgumentParser(
-        description="Generate tables and manuscript plots from cached Pareto UCB1 vs width-guided simulations."
+        description="Generate tables and plots from cached Pareto UCB1 vs width-guided simulations."
     )
     parser.add_argument(
         "--outdir",
@@ -163,7 +163,7 @@ def _format_horizon_for_latex(t_horizon: int) -> str:
 
 
 def _summarize_final_regret_runs(manifest: Dict[str, object], run_cache: np.lib.npyio.NpzFile) -> List[Dict[str, object]]:
-    """Aggregate final-regret runs into paper-facing summary rows."""
+    """Aggregate final-regret runs into summary rows."""
     rows: List[Dict[str, object]] = []
     for setting in manifest["final_settings"]:
         idx = int(setting["index"])
@@ -532,7 +532,7 @@ def _write_trajectory_figure(items: List[Dict[str, object]], plots_dir: Path, pl
 
 
 def main() -> None:
-    """Regenerate derived summaries and manuscript figures from raw caches."""
+    """Regenerate derived summaries and figures from raw caches."""
     args = _parse_args()
     out_dir = Path(args.outdir)
     if args.plots_dir is None:
@@ -552,7 +552,7 @@ def main() -> None:
     _write_derived_manifest(out_dir, manifest, plots_dir, matplotlib_version)
 
     print(
-        f"Saved derived summaries to {out_dir} and manuscript plots to {plots_dir}",
+        f"Saved derived summaries to {out_dir} and plots to {plots_dir}",
         flush=True,
     )
 

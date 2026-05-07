@@ -986,7 +986,7 @@ def build_trajectory_settings() -> List[Dict[str, object]]:
 
 
 def summarize_instance_metadata(mu: np.ndarray, t_horizon: int) -> Dict[str, object]:
-    """Compute paper-facing metadata for one synthetic instance."""
+    """Compute summary metadata for one synthetic instance."""
     opt_idx = pareto_nondominated_indices(mu)
     delta = pareto_arm_regrets(mu, opt_idx)
     subopt = delta[delta > 0]

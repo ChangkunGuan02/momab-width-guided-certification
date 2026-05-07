@@ -1,7 +1,7 @@
 """Real-data outcome benchmark runner.
 
 This runner selects held-out real-data subsets by empirical mean geometry,
-runs the paper-facing methods, and reports the outcome metrics used in the
+runs the configured methods, and reports the outcome metrics used in the
 computational study.
 The simulation path streams rewards and keeps compact counters so long-horizon
 benchmarks do not materialize K x T x d reward tensors.
