@@ -1,12 +1,8 @@
 # MOMAB Computational Study Artifact
 
-This directory contains the anonymous supplementary artifact for the
-computational study. The bundled outputs reproduce the manuscript tables and
-figures from the prepared benchmark instances included under `data/`.
-
-Anonymous repository: upload this directory through `https://anonymous.4open.science/`
-and replace this sentence with the generated anonymous repository URL before
-submission.
+This directory contains the supplementary computational artifact for the study.
+The bundled outputs reproduce the manuscript tables and figures from the
+prepared benchmark instances included under `data/`.
 
 ## Environment
 
@@ -44,10 +40,10 @@ trusted inputs.
 - `data/LICENSES.md`: attribution and license notes for the prepared data files.
 - `frozen_subsets/`: held-out subset definitions used for the manuscript rows.
 - `results/`: bundled final outputs used in the manuscript.
-- `scripts/`: Slurm submission, aggregation, and zip-building helpers.
+- `scripts/`: Slurm run, aggregation, and zip-building helpers.
 - `slurm/`: Slurm array task entry points.
 - `LICENSE`: code license and third-party data notice.
-- `CITATION.cff`: anonymous-review citation metadata.
+- `CITATION.cff`: citation metadata.
 
 ## Inspect Bundled Outputs
 
@@ -142,7 +138,7 @@ exist.
 
 ## Build Supplementary Zip
 
-To create the anonymous supplementary zip from this directory:
+To create the supplementary zip from this directory:
 
 ```bash
 bash scripts/make_supplement_zip.sh
