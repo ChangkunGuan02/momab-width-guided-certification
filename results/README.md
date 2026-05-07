@@ -35,5 +35,8 @@ Synthetic outputs:
 
 The real-data metadata records paths relative to the repository root, including
 `data/` for prepared instances and `frozen_subsets/` for frozen subset files.
+For KuaiRec, the artifact uses frozen subsets selected with the same
+empirical-geometry labels and reports bootstrapped empirical-front
+contamination diagnostics in the selected-subset metadata.
 The synthetic directory contains the table, summary, figures, and per-job
 outputs used for the reported synthetic results.
